@@ -14,9 +14,18 @@ const Meal = ({ filterType, filterValue }) => {
         .catch((err) => {
           console.error("Error fetching meals:", err)
           setMeal([])
-        });
+        })
     }
   }, [filterType, filterValue])
+
+  // Update document title based on filterValue
+  useEffect(() => {
+    if (filterValue) {
+      document.title = `Meals for "${filterValue}"`
+    } else {
+      document.title = 'Meal Finder'
+    }
+  }, [filterValue])
 
   if (!filterValue) return null;
 
