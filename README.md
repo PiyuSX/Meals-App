@@ -1,12 +1,61 @@
-# React + Vite
+# Meal Media
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Meal Media**, a sleek and user-friendly React app that lets you explore delicious meals with ease. Powered by [TheMealDB API](https://www.themealdb.com/api.php), this app allows users to browse, search, and filter a variety of meal recipes focused primarily on seafood cuisine.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the live version of the app here:  
+[https://mealmedia.netlify.app/](https://mealmedia.netlify.app/)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Browse meals fetched dynamically from a reliable API.
+- Search and filter meals by different criteria.
+- Responsive and modern UI with a warm orange-themed design.
+- Easy to navigate layout optimized for desktop and mobile devices.
+
+## API
+
+This project utilizes [TheMealDB API](https://www.themealdb.com/api.php), a free and open API for meal recipes. The app specifically fetches meals from categories like Seafood using endpoints such as:
+
+- Filter meals by category:  
+  `https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood`
+
+You can explore more endpoints and API features at the official site.
+
+## Technologies Used
+
+- React with functional components and hooks (`useState`, `useEffect`)
+- Axios for API requests
+- Tailwind CSS for styling and responsive design
+
+## Installation
+
+To run this project locally:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/PiyuSX/meal-media.git
+   cd meal-media
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Start the development server:
+
+bash
+Copy
+Edit
+npm start
+The app will be available at http://localhost:3000.
+
+Thank you for checking out Meal Media! Feel free to contribute or report issues.
+
+vbnet
+Copy
+Edit
+
+Let me know if you want me to add anything else!
