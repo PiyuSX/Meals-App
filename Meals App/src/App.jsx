@@ -1,8 +1,11 @@
 import React from 'react'
+import Home from './Home'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className='bg-orange-50 min-h-screen'>
+      <Home />
+    </div>
   )
 }
 
