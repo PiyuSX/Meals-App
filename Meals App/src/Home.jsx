@@ -1,14 +1,15 @@
-import React from 'react'
+import Header from './components/Header'
+import SearchBar from './components/SearchBar'
 import Meal from './components/Meal'
 
 const Home = () => {
-  return (
-    <>
-     <header className='flex justify-center bg-'>
-        <h1 className=''>Food Media</h1>    
-    </header>   
-    </>
-  )
+    return (
+        <div className="min-h-screen bg-orange-50">
+                <Header />
+                <SearchBar />
+                <Meal />
+        </div>
+    )
 }
 
 export default Home

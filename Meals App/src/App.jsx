@@ -3,7 +3,7 @@ import Home from './Home'
 
 const App = () => {
   return (
-    <div className='bg-orange-50 min-h-screen'>
+    <div>
       <Home />
     </div>
   )
