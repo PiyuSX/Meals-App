@@ -8,15 +8,23 @@ const Home = () => {
   const [filterValue, setFilterValue] = useState("")
 
   return (
-    <div className="min-h-screen bg-orange-50">
+    <div className="min-h-screen bg-orange-50 flex flex-col">
       <Header />
+
       <SearchBar
         filterType={filterType}
         setFilterType={setFilterType}
         filterValue={filterValue}
         setFilterValue={setFilterValue}
       />
-      <Meal filterType={filterType} filterValue={filterValue} />
+
+      <main className="flex-grow">
+        <Meal filterType={filterType} filterValue={filterValue} />
+      </main>
+
+      <footer className="p-4 text-orange-700 select-none text-right">
+        A app By Piyush
+      </footer>
     </div>
   )
 }
